@@ -1,7 +1,18 @@
+import Hero from "../components/hero/Hero";
+import CloudIntro from "../components/cloud/CloudIntro";
+import ServiceModels from "../components/cloud/ServiceModels";
+import CTASection from "../components/cloud/CTASection";
+
 function Home() {
   return (
     <main>
-      <h1>Cloud Explorer</h1>
+      <Hero />
+
+      <CloudIntro />
+
+      <ServiceModels />
+
+      <CTASection />
     </main>
   );
 }

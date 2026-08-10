@@ -1,0 +1,117 @@
+.service-models {
+  background: rgba(30, 41, 59, 0.25);
+}
+
+.service-model-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1.5rem;
+
+  border-radius: 18px;
+
+  font-size: 2rem;
+}
+
+.service-short-name {
+  display: inline-block;
+
+  margin-bottom: 0.75rem;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.service-card p {
+  margin-bottom: 1.5rem;
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.service-link:hover {
+  gap: 0.8rem;
+}
+
+/* IaaS */
+
+.service-card.iaas {
+  border-top: 3px solid #3b82f6;
+}
+
+.service-card.iaas .service-icon {
+  background: rgba(59, 130, 246, 0.12);
+  color: #3b82f6;
+}
+
+.service-card.iaas .service-short-name,
+.service-card.iaas .service-link {
+  color: #3b82f6;
+}
+
+/* PaaS */
+
+.service-card.paas {
+  border-top: 3px solid #a855f7;
+}
+
+.service-card.paas .service-icon {
+  background: rgba(168, 85, 247, 0.12);
+  color: #a855f7;
+}
+
+.service-card.paas .service-short-name,
+.service-card.paas .service-link {
+  color: #a855f7;
+}
+
+/* SaaS */
+
+.service-card.saas {
+  border-top: 3px solid #22c55e;
+}
+
+.service-card.saas .service-icon {
+  background: rgba(34, 197, 94, 0.12);
+  color: #22c55e;
+}
+
+.service-card.saas .service-short-name,
+.service-card.saas .service-link {
+  color: #22c55e;
+}
+
+@media (max-width: 992px) {
+  .service-model-grid {
+    grid-template-columns: 1fr;
+  }
+}

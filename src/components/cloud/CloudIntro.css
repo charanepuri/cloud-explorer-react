@@ -1,0 +1,53 @@
+.cloud-intro {
+  position: relative;
+}
+
+.cloud-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.benefit-card {
+  text-align: center;
+}
+
+.benefit-icon {
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: rgba(37, 99, 235, 0.1);
+
+  color: var(--primary-color);
+
+  font-size: 2rem;
+}
+
+.benefit-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .cloud-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .cloud-benefits {
+    grid-template-columns: 1fr;
+  }
+}

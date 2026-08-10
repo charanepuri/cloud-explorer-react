@@ -50,7 +50,7 @@ function Footer() {
             <h3>Project</h3>
 
             <a
-              href="https://github.com/charanepuri"
+              href="https://github.com/charanepuri/cloud-explorer-react"
               target="_blank"
               rel="noreferrer"
             >
