@@ -84,6 +84,24 @@
   color: #22c55e;
 }
 
+.management-section.saas .user-management {
+  border-top-color: #22c55e;
+}
+
+.management-section.saas .user-management .management-header,
+.management-section.saas .user-management li span {
+  color: #22c55e;
+}
+
+.examples-section.saas .example-icon {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.examples-section.saas .example-link {
+  color: #22c55e;
+}
+
 @media (max-width: 768px) {
   .management-grid {
     grid-template-columns: 1fr;

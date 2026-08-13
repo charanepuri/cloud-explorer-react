@@ -147,7 +147,80 @@ export const paasData = {
   ],
 };
 
+export const saasData = {
+  title: "Software as a Service",
+  shortName: "SaaS",
 
+  description:
+    "SaaS delivers complete software applications over the internet. Users simply access the application while the provider manages the infrastructure, platform, and software.",
+
+  resources: [
+    "Ready-to-use Applications",
+    "Web Applications",
+    "Mobile Applications",
+    "Cloud Storage",
+    "Collaboration Tools",
+  ],
+
+  managedByYou: [
+    "Application Usage",
+    "Your Data",
+    "User Settings",
+  ],
+
+  managedByProvider: [
+    "Application",
+    "Data Infrastructure",
+    "Runtime",
+    "Middleware",
+    "Operating System",
+    "Servers",
+    "Storage",
+    "Networking",
+    "Physical Data Center",
+  ],
+
+  examples: [
+    {
+      name: "Gmail",
+      provider: "Google",
+      description:
+        "A cloud-based email service that lets users send, receive, and manage email through the internet.",
+    },
+    {
+      name: "Google Docs",
+      provider: "Google",
+      description:
+        "An online document editor that allows users to create, edit, and collaborate on documents.",
+    },
+    {
+      name: "Microsoft 365",
+      provider: "Microsoft",
+      description:
+        "A collection of cloud-based productivity applications including Word, Excel, and PowerPoint.",
+    },
+    {
+      name: "Canva",
+      provider: "Canva",
+      description:
+        "An online design platform for creating presentations, graphics, social media content, and more.",
+    },
+    {
+      name: "ChatGPT",
+      provider: "OpenAI",
+      description:
+        "An AI-powered conversational application accessed directly through the internet.",
+    },
+  ],
+
+  bestFor: [
+    "End users who want ready-to-use software",
+    "Teams that need collaboration tools",
+    "Businesses looking to avoid software maintenance",
+    "Users who want access from anywhere",
+    "Organizations that prefer subscription-based software",
+  ],
+};
 
 
 
