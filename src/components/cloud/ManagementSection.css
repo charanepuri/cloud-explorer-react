@@ -1,0 +1,72 @@
+.management-section {
+  background: rgba(30, 41, 59, 0.25);
+}
+
+.management-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.management-card {
+  padding: 2.5rem;
+}
+
+.management-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+.management-header svg {
+  width: 30px;
+  height: 30px;
+}
+
+.management-header h3 {
+  font-size: 1.4rem;
+}
+
+.management-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.management-card li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  color: var(--text-secondary);
+}
+
+.management-card li span {
+  font-weight: 700;
+}
+
+.user-management {
+  border-top: 3px solid #3b82f6;
+}
+
+.user-management .management-header,
+.user-management li span {
+  color: #3b82f6;
+}
+
+.provider-management {
+  border-top: 3px solid #22c55e;
+}
+
+.provider-management .management-header,
+.provider-management li span {
+  color: #22c55e;
+}
+
+@media (max-width: 768px) {
+  .management-grid {
+    grid-template-columns: 1fr;
+  }
+}
