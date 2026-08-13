@@ -6,23 +6,24 @@ import {
 import SectionTitle from "../common/SectionTitle";
 import Card from "../common/Card";
 
-import { iaasData } from "../../data/cloudData";
-
 import "./ExamplesSection.css";
 
-function ExamplesSection() {
+function ExamplesSection({
+  data,
+  accent = "iaas",
+}) {
   return (
-    <section className="examples-section">
+    <section className={`examples-section ${accent}`}>
       <div className="container">
 
         <SectionTitle
-          title="Popular IaaS Examples"
-          subtitle="These cloud platforms provide virtualized infrastructure that you can configure and manage according to your requirements."
+          title={`Popular ${data.shortName} Examples`}
+          subtitle={`Explore popular platforms and services built around ${data.title}.`}
         />
 
         <div className="examples-grid">
 
-          {iaasData.examples.map((example) => (
+          {data.examples.map((example) => (
             <Card key={example.name} className="example-card">
 
               <div className="example-icon">

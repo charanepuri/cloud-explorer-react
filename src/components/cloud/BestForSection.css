@@ -35,6 +35,10 @@
   color: #3b82f6;
 }
 
+.best-for-section.paas .best-for-item svg {
+  color: #a855f7;
+}
+
 @media (max-width: 768px) {
   .best-for-list {
     grid-template-columns: 1fr;

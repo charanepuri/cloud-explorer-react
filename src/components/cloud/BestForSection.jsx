@@ -2,29 +2,31 @@ import { HiOutlineCheckCircle } from "react-icons/hi2";
 
 import SectionTitle from "../common/SectionTitle";
 
-import { iaasData } from "../../data/cloudData";
-
 import "./BestForSection.css";
 
-function BestForSection() {
+function BestForSection({
+  data,
+  accent = "iaas",
+}) {
   return (
-    <section className="best-for-section">
+    <section className={`best-for-section ${accent}`}>
       <div className="container">
 
         <SectionTitle
-          title="IaaS Is Best For"
-          subtitle="IaaS is a good choice when you need flexibility and control over your computing infrastructure."
+          title={`${data.shortName} Is Best For`}
+          subtitle={`Discover situations where ${data.shortName} can be the right cloud service model.`}
         />
 
         <div className="best-for-list">
 
-          {iaasData.bestFor.map((item) => (
-            <div className="best-for-item" key={item}>
-
+          {data.bestFor.map((item) => (
+            <div
+              className="best-for-item"
+              key={item}
+            >
               <HiOutlineCheckCircle />
 
               <span>{item}</span>
-
             </div>
           ))}
 

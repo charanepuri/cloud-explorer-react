@@ -86,6 +86,72 @@ export const iaasData = {
   ],
 };
 
+export const paasData = {
+  title: "Platform as a Service",
+  shortName: "PaaS",
+
+  description:
+    "PaaS provides developers with a managed platform and development environment for building, deploying, and managing applications without having to manage the underlying infrastructure.",
+
+  resources: [
+    "Development Environment",
+    "Runtime",
+    "Databases",
+    "Development Tools",
+    "Application Hosting",
+  ],
+
+  managedByYou: [
+    "Applications",
+    "Application Data",
+    "Application Configuration",
+  ],
+
+  managedByProvider: [
+    "Runtime",
+    "Middleware",
+    "Operating System",
+    "Servers",
+    "Storage",
+    "Networking",
+    "Physical Data Center",
+  ],
+
+  examples: [
+    {
+      name: "Heroku",
+      provider: "Salesforce",
+      description:
+        "A cloud platform that simplifies application deployment and management for developers.",
+    },
+    {
+      name: "Google App Engine",
+      provider: "Google Cloud",
+      description:
+        "A fully managed platform for building and deploying scalable web applications.",
+    },
+    {
+      name: "Azure App Service",
+      provider: "Microsoft Azure",
+      description:
+        "A managed platform for hosting web applications, APIs, and backend services.",
+    },
+  ],
+
+  bestFor: [
+    "Developers who want to focus on application development",
+    "Rapid application development",
+    "Application deployment without infrastructure management",
+    "Development and testing environments",
+    "Teams looking for faster application delivery",
+  ],
+};
+
+
+
+
+
+
 export const comparisonData = [];
 
 export const quizQuestions = [];

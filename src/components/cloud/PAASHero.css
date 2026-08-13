@@ -1,0 +1,95 @@
+.paas-hero {
+  padding: 6rem 0;
+
+  background:
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(168, 85, 247, 0.15),
+      transparent 35%
+    );
+}
+
+.paas-hero-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  align-items: center;
+  gap: 4rem;
+}
+
+.paas-label {
+  display: inline-block;
+  margin-bottom: 1rem;
+
+  color: #a855f7;
+
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.paas-hero-content h1 {
+  max-width: 800px;
+
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 1.05;
+
+  margin-bottom: 1.5rem;
+}
+
+.paas-hero-content h1 span {
+  color: #a855f7;
+}
+
+.paas-hero-content p {
+  max-width: 700px;
+  font-size: 1.1rem;
+}
+
+.paas-hero-icon {
+  width: 280px;
+  height: 280px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(168, 85, 247, 0.1);
+
+  border: 1px solid rgba(168, 85, 247, 0.3);
+
+  color: #a855f7;
+}
+
+.paas-hero-icon svg {
+  width: 130px;
+  height: 130px;
+}
+
+@media (max-width: 768px) {
+  .paas-hero {
+    padding: 4rem 0;
+  }
+
+  .paas-hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .paas-hero-content p {
+    margin: auto;
+  }
+
+  .paas-hero-icon {
+    width: 200px;
+    height: 200px;
+  }
+
+  .paas-hero-icon svg {
+    width: 90px;
+    height: 90px;
+  }
+}

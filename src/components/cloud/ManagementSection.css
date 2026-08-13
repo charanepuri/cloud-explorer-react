@@ -65,6 +65,25 @@
   color: #22c55e;
 }
 
+.management-section.paas .user-management {
+  border-top-color: #a855f7;
+}
+
+.management-section.paas .user-management .management-header,
+.management-section.paas .user-management li span {
+  color: #a855f7;
+}
+
+/* given by copilot */
+.management-section.paas .provider-management {
+  border-top-color: #22c55e;
+}
+
+.management-section.paas .provider-management .management-header,
+.management-section.paas .provider-management li span {
+  color: #22c55e;
+}
+
 @media (max-width: 768px) {
   .management-grid {
     grid-template-columns: 1fr;

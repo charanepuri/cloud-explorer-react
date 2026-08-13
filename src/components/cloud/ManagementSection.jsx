@@ -6,18 +6,19 @@ import {
 import SectionTitle from "../common/SectionTitle";
 import Card from "../common/Card";
 
-import { iaasData } from "../../data/cloudData";
-
 import "./ManagementSection.css";
 
-function ManagementSection() {
+function ManagementSection({
+  data,
+  accent = "iaas",
+}) {
   return (
-    <section className="management-section">
+    <section className={`management-section ${accent}`}>
       <div className="container">
 
         <SectionTitle
           title="Who Manages What?"
-          subtitle="With IaaS, you get more control over the infrastructure while the cloud provider manages the physical foundation."
+          subtitle="See how responsibilities are divided between you and the cloud provider."
         />
 
         <div className="management-grid">
@@ -30,7 +31,7 @@ function ManagementSection() {
             </div>
 
             <ul>
-              {iaasData.managedByYou.map((item) => (
+              {data.managedByYou.map((item) => (
                 <li key={item}>
                   <span>✓</span>
                   {item}
@@ -48,7 +49,7 @@ function ManagementSection() {
             </div>
 
             <ul>
-              {iaasData.managedByProvider.map((item) => (
+              {data.managedByProvider.map((item) => (
                 <li key={item}>
                   <span>✓</span>
                   {item}

@@ -59,6 +59,15 @@
   font-weight: 600;
 }
 
+.examples-section.paas .example-icon {
+  background: rgba(168, 85, 247, 0.1);
+  color: #a855f7;
+}
+
+.examples-section.paas .example-link {
+  color: #a855f7;
+}
+
 @media (max-width: 992px) {
   .examples-grid {
     grid-template-columns: 1fr;
