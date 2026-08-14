@@ -1,7 +1,15 @@
+import ComparisonHero from "../components/comparison/ComparisonHero";
+import ComparisonTable from "../components/comparison/ComparisonTable";
+import ComparisonTakeaways from "../components/comparison/ComparisonTakeaways";
+
 function Comparison() {
   return (
     <main>
-      <h1>IaaS vs PaaS vs SaaS</h1>
+      <ComparisonHero />
+
+      <ComparisonTable />
+
+      <ComparisonTakeaways />
     </main>
   );
 }

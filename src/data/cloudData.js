@@ -225,6 +225,55 @@ export const saasData = {
 
 
 
-export const comparisonData = [];
+export const comparisonData = [
+  {
+    feature: "Infrastructure",
+    iaas: "Provider",
+    paas: "Provider",
+    saas: "Provider",
+  },
+  {
+    feature: "Operating System",
+    iaas: "You Manage",
+    paas: "Provider",
+    saas: "Provider",
+  },
+  {
+    feature: "Runtime",
+    iaas: "You Manage",
+    paas: "Provider",
+    saas: "Provider",
+  },
+  {
+    feature: "Middleware",
+    iaas: "You Manage",
+    paas: "Provider",
+    saas: "Provider",
+  },
+  {
+    feature: "Applications",
+    iaas: "You Manage",
+    paas: "You Manage",
+    saas: "Provider",
+  },
+  {
+    feature: "Data",
+    iaas: "You Manage",
+    paas: "You Manage",
+    saas: "Provider",
+  },
+  {
+    feature: "Management Level",
+    iaas: "High",
+    paas: "Medium",
+    saas: "Low",
+  },
+  {
+    feature: "Best For",
+    iaas: "DevOps & IT Teams",
+    paas: "Developers",
+    saas: "End Users",
+  },
+];
 
 export const quizQuestions = [];

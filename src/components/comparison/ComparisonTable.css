@@ -1,0 +1,129 @@
+.comparison-table-section {
+  padding: 2rem 0 6rem;
+}
+
+.comparison-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+
+  background: var(--surface-color);
+}
+
+.comparison-table {
+  width: 100%;
+
+  min-width: 850px;
+
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1.2rem 1rem;
+
+  border-bottom: 1px solid var(--border-color);
+
+  text-align: center;
+
+  color: var(--text-secondary);
+}
+
+.comparison-table thead th {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.comparison-table tbody th {
+  text-align: left;
+
+  color: var(--text-primary);
+
+  font-weight: 600;
+}
+
+.comparison-table tbody tr:last-child th,
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table tbody tr {
+  transition: var(--transition);
+}
+
+.comparison-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* IaaS */
+
+.comparison-table .iaas-column {
+  background: rgba(59, 130, 246, 0.04);
+}
+
+.comparison-table thead .iaas-column {
+  color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+/* PaaS */
+
+.comparison-table .paas-column {
+  background: rgba(168, 85, 247, 0.04);
+}
+
+.comparison-table thead .paas-column {
+  color: #a855f7;
+  background: rgba(168, 85, 247, 0.1);
+}
+
+/* SaaS */
+
+.comparison-table .saas-column {
+  background: rgba(34, 197, 94, 0.04);
+}
+
+.comparison-table thead .saas-column {
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+}
+
+/* Values */
+
+.comparison-value {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.35rem;
+
+  font-size: 0.9rem;
+}
+
+.comparison-value.provider {
+  color: #22c55e;
+}
+
+.comparison-value.provider svg {
+  width: 18px;
+  height: 18px;
+}
+
+.comparison-value.user {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .comparison-table-section {
+    padding-top: 1rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 1rem 0.8rem;
+  }
+}
