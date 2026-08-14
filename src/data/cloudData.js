@@ -333,90 +333,300 @@ export const quizQuestions = [
   {
     id: 1,
     question:
-      "Which service model allows you to run your code without managing servers or infrastructure?",
-
+      "Which cloud service model provides virtualized computing resources such as servers, storage, and networking?",
     options: [
       "IaaS",
       "PaaS",
       "SaaS",
-      "All of the above",
+      "DaaS",
     ],
-
-    answer: "PaaS",
-
+    answer: "IaaS",
     explanation:
-      "PaaS allows developers to focus on building and deploying applications while the cloud provider manages the underlying infrastructure.",
+      "IaaS provides virtualized infrastructure resources such as compute, storage, and networking.",
   },
 
   {
     id: 2,
     question:
-      "Which cloud service model gives you the most control over the underlying infrastructure?",
-
+      "Which cloud service model allows developers to build and deploy applications without managing the underlying infrastructure?",
     options: [
       "IaaS",
       "PaaS",
       "SaaS",
-      "None of the above",
+      "On-Premises",
     ],
-
-    answer: "IaaS",
-
+    answer: "PaaS",
     explanation:
-      "IaaS provides the highest level of control because users manage operating systems, applications, and other software components.",
+      "PaaS provides a managed platform where developers can focus on application development while the provider manages the underlying infrastructure.",
   },
 
   {
     id: 3,
     question:
-      "Which service model provides ready-to-use software applications over the internet?",
-
+      "Which cloud service model provides complete software applications to end users?",
     options: [
       "IaaS",
       "PaaS",
       "SaaS",
-      "Private Cloud",
+      "FaaS",
     ],
-
     answer: "SaaS",
-
     explanation:
-      "SaaS delivers complete software applications that users can access without managing the underlying infrastructure.",
+      "SaaS provides complete software applications that users can access through the internet.",
   },
 
   {
     id: 4,
     question:
-      "Which of these is an example of IaaS?",
-
+      "Which cloud service model gives the customer the highest level of control over the operating system?",
     options: [
-      "Gmail",
-      "Amazon EC2",
-      "Google Docs",
-      "Canva",
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "All models",
     ],
-
-    answer: "Amazon EC2",
-
+    answer: "IaaS",
     explanation:
-      "Amazon EC2 provides virtual computing infrastructure, making it an example of IaaS.",
+      "With IaaS, customers typically manage the operating system and applications running on the infrastructure.",
   },
 
   {
     id: 5,
     question:
-      "Which cloud model is generally best for developers who want to focus on application development?",
+      "Which service model is generally most suitable for developers who want to focus primarily on writing application code?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Colocation",
+    ],
+    answer: "PaaS",
+    explanation:
+      "PaaS reduces infrastructure management so developers can concentrate on application development and deployment.",
+  },
 
+  {
+    id: 6,
+    question:
+      "Which cloud service model usually requires the least infrastructure management from the end user?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Bare Metal",
+    ],
+    answer: "SaaS",
+    explanation:
+      "SaaS provides a complete application, so the provider handles most infrastructure and software management.",
+  },
+
+  {
+    id: 7,
+    question:
+      "Amazon EC2 is commonly classified under which cloud service model?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "BPaaS",
+    ],
+    answer: "IaaS",
+    explanation:
+      "Amazon EC2 provides virtual computing infrastructure that customers can configure and manage.",
+  },
+
+  {
+    id: 8,
+    question:
+      "Which model is represented by the real-life analogy of a furnished apartment?",
     options: [
       "IaaS",
       "PaaS",
       "SaaS",
       "Traditional Hosting",
     ],
-
     answer: "PaaS",
-
     explanation:
-      "PaaS provides a managed development platform so developers can focus on application code instead of infrastructure management.",
+      "PaaS is compared to a furnished apartment because the platform is prepared for development while the user focuses on their application.",
+  },
+
+  {
+    id: 9,
+    question:
+      "Which model is represented by the real-life analogy of a hotel room?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Private Cloud",
+    ],
+    answer: "SaaS",
+    explanation:
+      "SaaS is compared to a hotel room because the environment is ready to use and the provider handles the underlying management.",
+  },
+
+  {
+    id: 10,
+    question:
+      "Which model is represented by an empty apartment that the customer must set up?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "FaaS",
+    ],
+    answer: "IaaS",
+    explanation:
+      "IaaS is represented by an empty apartment because the customer receives the basic infrastructure and manages much of the environment.",
+  },
+
+  {
+    id: 11,
+    question:
+      "In which cloud service model does the provider manage the physical infrastructure while the customer manages the operating system?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "All three equally",
+    ],
+    answer: "IaaS",
+    explanation:
+      "In IaaS, the provider manages the physical infrastructure while the customer typically manages the operating system and software above it.",
+  },
+
+  {
+    id: 12,
+    question:
+      "Which service model is most closely associated with ready-to-use applications accessed over the internet?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Infrastructure Hosting",
+    ],
+    answer: "SaaS",
+    explanation:
+      "SaaS delivers complete applications over the internet and is designed for direct end-user consumption.",
+  },
+
+  {
+    id: 13,
+    question:
+      "Which cloud model generally provides the greatest flexibility for configuring virtual infrastructure?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "SaaS and PaaS equally",
+    ],
+    answer: "IaaS",
+    explanation:
+      "IaaS provides customers with significant control over virtual machines, operating systems, storage, and networking.",
+  },
+
+  {
+    id: 14,
+    question:
+      "Which cloud model shifts more infrastructure management responsibility from the customer to the provider compared with IaaS?",
+    options: [
+      "PaaS",
+      "Bare Metal",
+      "Colocation",
+      "On-Premises",
+    ],
+    answer: "PaaS",
+    explanation:
+      "PaaS manages more of the infrastructure and platform stack for the customer than IaaS.",
+  },
+
+  {
+    id: 15,
+    question:
+      "Which cloud service model is primarily focused on delivering finished applications rather than development platforms?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Infrastructure as Code",
+    ],
+    answer: "SaaS",
+    explanation:
+      "SaaS delivers finished applications directly to users rather than providing infrastructure or a development platform.",
+  },
+
+  {
+    id: 16,
+    question:
+      "As you move from IaaS toward SaaS, what generally happens to the customer's infrastructure management responsibility?",
+    options: [
+      "It decreases",
+      "It increases",
+      "It remains exactly the same",
+      "It becomes the only responsibility",
+    ],
+    answer: "It decreases",
+    explanation:
+      "Moving from IaaS to PaaS and then SaaS generally transfers more management responsibility to the cloud provider.",
+  },
+
+  {
+    id: 17,
+    question:
+      "Which service model is most appropriate when a company wants a managed environment for developing and deploying applications?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Physical Hosting",
+    ],
+    answer: "PaaS",
+    explanation:
+      "PaaS provides managed development and deployment capabilities while reducing infrastructure management.",
+  },
+
+  {
+    id: 18,
+    question:
+      "Which cloud service model is generally the most convenient for an end user who simply wants to use an application?",
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Bare Metal",
+    ],
+    answer: "SaaS",
+    explanation:
+      "SaaS is designed to provide ready-to-use applications without requiring users to manage the underlying infrastructure.",
+  },
+
+  {
+    id: 19,
+    question:
+      "Which statement best describes the main advantage of IaaS?",
+    options: [
+      "Greater infrastructure control",
+      "Complete application management by the provider",
+      "No infrastructure configuration",
+      "Only end-user software access",
+    ],
+    answer: "Greater infrastructure control",
+    explanation:
+      "A major advantage of IaaS is the level of control customers have over virtual infrastructure and operating environments.",
+  },
+
+  {
+    id: 20,
+    question:
+      "Which statement best summarizes the relationship between IaaS, PaaS, and SaaS?",
+    options: [
+      "They provide different levels of management and control",
+      "They are identical services with different names",
+      "They are all physical hosting models",
+      "They only differ in storage capacity",
+    ],
+    answer: "They provide different levels of management and control",
+    explanation:
+      "IaaS, PaaS, and SaaS represent different cloud service models with different divisions of responsibility between the provider and customer.",
   },
 ];

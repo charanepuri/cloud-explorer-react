@@ -57,7 +57,7 @@ function Footer() {
               GitHub Repository
             </a>
 
-            <a href="#">
+            <a href="Cloud_Explorer_Project_Documentation.pdf" target="_blank" rel="noreferrer">
               Documentation
             </a>
           </div>
