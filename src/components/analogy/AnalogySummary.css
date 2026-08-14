@@ -1,0 +1,130 @@
+.analogy-summary {
+  padding: 6rem 0;
+
+  background: rgba(30, 41, 59, 0.25);
+}
+
+.analogy-flow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 2rem;
+
+  margin-bottom: 3rem;
+}
+
+.flow-item {
+  min-width: 180px;
+
+  padding: 1.5rem;
+
+  text-align: center;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: var(--radius-lg);
+
+  background: var(--surface-color);
+}
+
+.flow-item strong {
+  display: block;
+
+  font-size: 1.4rem;
+
+  margin-bottom: 0.4rem;
+}
+
+.flow-item span {
+  font-size: 0.85rem;
+
+  color: var(--text-secondary);
+}
+
+.flow-item.iaas strong {
+  color: #3b82f6;
+}
+
+.flow-item.paas strong {
+  color: #a855f7;
+}
+
+.flow-item.saas strong {
+  color: #22c55e;
+}
+
+.analogy-flow > svg {
+  width: 24px;
+
+  color: var(--text-secondary);
+}
+
+.responsibility-bar {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  max-width: 800px;
+
+  margin: auto;
+
+  color: var(--text-secondary);
+
+  font-size: 0.85rem;
+}
+
+.responsibility-line {
+  flex: 1;
+
+  height: 8px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #3b82f6,
+      #a855f7,
+      #22c55e
+    );
+
+  position: relative;
+}
+
+.responsibility-line div {
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: inherit;
+
+  box-shadow:
+    0 0 15px rgba(59, 130, 246, 0.25),
+    0 0 15px rgba(34, 197, 94, 0.25);
+}
+
+@media (max-width: 768px) {
+
+  .analogy-flow {
+    flex-direction: column;
+  }
+
+  .analogy-flow > svg {
+    transform: rotate(90deg);
+  }
+
+  .responsibility-bar {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .responsibility-line {
+    width: 100%;
+  }
+
+}

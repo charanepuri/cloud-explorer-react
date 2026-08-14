@@ -276,4 +276,57 @@ export const comparisonData = [
   },
 ];
 
+export const analogyData = [
+  {
+    id: "iaas",
+    model: "IaaS",
+    title: "Empty Apartment",
+    description:
+      "The provider gives you the basic space and infrastructure. You are responsible for setting up and managing everything you need inside.",
+    cloudDescription:
+      "You manage the operating system, applications, data, and other software while the provider manages the physical infrastructure.",
+    color: "iaas",
+    points: [
+      "Maximum control",
+      "Set up your own environment",
+      "Manage the operating system",
+      "Manage your applications",
+    ],
+  },
+
+  {
+    id: "paas",
+    model: "PaaS",
+    title: "Furnished Apartment",
+    description:
+      "The apartment is already equipped with essential furniture. You can focus on living there instead of setting everything up yourself.",
+    cloudDescription:
+      "The provider manages the infrastructure and platform while you focus mainly on building and managing your applications.",
+    color: "paas",
+    points: [
+      "Focus on development",
+      "Platform is ready",
+      "Less infrastructure management",
+      "Faster application delivery",
+    ],
+  },
+
+  {
+    id: "saas",
+    model: "SaaS",
+    title: "Hotel Room",
+    description:
+      "Everything is ready for you. You simply check in and use the room without worrying about maintenance or setup.",
+    cloudDescription:
+      "The provider manages almost everything and you simply use the complete software application.",
+    color: "saas",
+    points: [
+      "Ready to use",
+      "No infrastructure management",
+      "No software installation",
+      "Access from anywhere",
+    ],
+  },
+];
+
 export const quizQuestions = [];

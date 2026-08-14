@@ -1,0 +1,167 @@
+.analogy-cards-section {
+  padding: 2rem 0 6rem;
+}
+
+.analogy-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+
+.analogy-card {
+  text-align: center;
+
+  overflow: hidden;
+}
+
+.analogy-card-visual {
+  height: 190px;
+
+  margin: -2rem -2rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.02);
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.analogy-icon {
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 24px;
+
+  font-size: 3.5rem;
+}
+
+.analogy-model {
+  display: block;
+
+  margin-bottom: 0.4rem;
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+.analogy-card h3 {
+  font-size: 1.5rem;
+
+  margin-bottom: 1rem;
+}
+
+.analogy-description {
+  font-size: 0.95rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.analogy-divider {
+  height: 1px;
+
+  background: var(--border-color);
+
+  margin-bottom: 1.5rem;
+}
+
+.cloud-description {
+  font-size: 0.9rem;
+
+  text-align: left;
+
+  margin-bottom: 1.5rem;
+}
+
+.analogy-card ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.7rem;
+
+  text-align: left;
+}
+
+.analogy-card li {
+  display: flex;
+
+  gap: 0.6rem;
+
+  color: var(--text-secondary);
+
+  font-size: 0.9rem;
+}
+
+.analogy-card li span {
+  font-weight: 700;
+}
+
+/* IaaS */
+
+.analogy-card.iaas {
+  border-top: 3px solid #3b82f6;
+}
+
+.analogy-card.iaas .analogy-icon {
+  background: rgba(59, 130, 246, 0.1);
+
+  color: #3b82f6;
+}
+
+.analogy-card.iaas .analogy-model,
+.analogy-card.iaas li span {
+  color: #3b82f6;
+}
+
+/* PaaS */
+
+.analogy-card.paas {
+  border-top: 3px solid #a855f7;
+}
+
+.analogy-card.paas .analogy-icon {
+  background: rgba(168, 85, 247, 0.1);
+
+  color: #a855f7;
+}
+
+.analogy-card.paas .analogy-model,
+.analogy-card.paas li span {
+  color: #a855f7;
+}
+
+/* SaaS */
+
+.analogy-card.saas {
+  border-top: 3px solid #22c55e;
+}
+
+.analogy-card.saas .analogy-icon {
+  background: rgba(34, 197, 94, 0.1);
+
+  color: #22c55e;
+}
+
+.analogy-card.saas .analogy-model,
+.analogy-card.saas li span {
+  color: #22c55e;
+}
+
+@media (max-width: 992px) {
+
+  .analogy-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

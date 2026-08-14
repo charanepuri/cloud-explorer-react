@@ -5,6 +5,7 @@ import IaaS from "./pages/IaaS";
 import PaaS from "./pages/PaaS";
 import SaaS from "./pages/SaaS";
 import Comparison from "./pages/Comparison";
+import Analogy from "./pages/Analogy";
 import Quiz from "./pages/Quiz";
 import About from "./pages/About";
 
@@ -16,6 +17,7 @@ function AppRoutes() {
       <Route path="/paas" element={<PaaS />} />
       <Route path="/saas" element={<SaaS />} />
       <Route path="/comparison" element={<Comparison />} />
+      <Route path="/analogy" element={<Analogy />} />
       <Route path="/quiz" element={<Quiz />} />
       <Route path="/about" element={<About />} />
     </Routes>

@@ -37,6 +37,10 @@ function Navbar() {
             Comparison
           </NavLink>
 
+          <NavLink to="/analogy" onClick={closeMenu}>
+            Analogy
+          </NavLink>
+
           <NavLink to="/quiz" onClick={closeMenu}>
             Quiz
           </NavLink>
