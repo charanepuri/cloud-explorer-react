@@ -4,6 +4,29 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #a855f7;
+
+  --background-color: #020617;
+  --surface-color: #0f172a;
+  --surface-hover: #1e293b;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+
+  --border-color: rgba(148, 163, 184, 0.15);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  --transition: 0.25s ease;
+}
+
 html {
   scroll-behavior: smooth;
 }
