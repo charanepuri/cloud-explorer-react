@@ -472,11 +472,15 @@ https://cloud-explorer-react.vercel.app/
 
 ### Explore More Projects
 
-- **Portfolio — Django:** https://portfolio-site-django.onrender.com/
-- **Portfolio — React:** https://charan-react-portfolio.vercel.app/
-- **Profile Card — Angular:** https://profile-card-angular.vercel.app/
-- **Portfolio — Flask:** https://flask-developer-dashboard-portfolio.onrender.com/
-- **Portfolio — Angular:** https://angular-portfolio-sigma-eight.vercel.app/
+- **Portfolio :** [Django] (https://portfolio-site-django.onrender.com/)
+
+- **Portfolio : ** [React] (https://charan-react-portfolio.vercel.app/)
+
+- **Profile Card : **[Link] (https://profile-card-angular.vercel.app/)
+
+- **Portfolio : ** [Flask] (https://flask-developer-dashboard-portfolio.onrender.com/)
+
+- **Portfolio : **[Angular] (https://angular-portfolio-sigma-eight.vercel.app/)
 
 ---
 
