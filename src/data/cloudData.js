@@ -329,4 +329,94 @@ export const analogyData = [
   },
 ];
 
-export const quizQuestions = [];
+export const quizQuestions = [
+  {
+    id: 1,
+    question:
+      "Which service model allows you to run your code without managing servers or infrastructure?",
+
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "All of the above",
+    ],
+
+    answer: "PaaS",
+
+    explanation:
+      "PaaS allows developers to focus on building and deploying applications while the cloud provider manages the underlying infrastructure.",
+  },
+
+  {
+    id: 2,
+    question:
+      "Which cloud service model gives you the most control over the underlying infrastructure?",
+
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "None of the above",
+    ],
+
+    answer: "IaaS",
+
+    explanation:
+      "IaaS provides the highest level of control because users manage operating systems, applications, and other software components.",
+  },
+
+  {
+    id: 3,
+    question:
+      "Which service model provides ready-to-use software applications over the internet?",
+
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Private Cloud",
+    ],
+
+    answer: "SaaS",
+
+    explanation:
+      "SaaS delivers complete software applications that users can access without managing the underlying infrastructure.",
+  },
+
+  {
+    id: 4,
+    question:
+      "Which of these is an example of IaaS?",
+
+    options: [
+      "Gmail",
+      "Amazon EC2",
+      "Google Docs",
+      "Canva",
+    ],
+
+    answer: "Amazon EC2",
+
+    explanation:
+      "Amazon EC2 provides virtual computing infrastructure, making it an example of IaaS.",
+  },
+
+  {
+    id: 5,
+    question:
+      "Which cloud model is generally best for developers who want to focus on application development?",
+
+    options: [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "Traditional Hosting",
+    ],
+
+    answer: "PaaS",
+
+    explanation:
+      "PaaS provides a managed development platform so developers can focus on application code instead of infrastructure management.",
+  },
+];

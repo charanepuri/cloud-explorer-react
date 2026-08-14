@@ -66,3 +66,14 @@ p {
 body {
   overflow-x: hidden;
 }
+
+.quiz-section {
+  padding: 2rem 0 6rem;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(245, 158, 11, 0.04),
+      transparent 50%
+    );
+}
